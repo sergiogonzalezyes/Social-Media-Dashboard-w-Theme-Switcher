@@ -1,0 +1,19 @@
+.card {
+    background-color: hsl(228, 28%, 20%);
+}
+
+.card:hover {
+    background-color: hsl(228, 28%, 30%);
+}
+
+.card-footer, .followers-today.positive {
+    color: hsl(163, 72%, 41%);
+}
+
+.card-footer, .followers-today.negative {
+    color: hsl(356, 69%, 56%);
+}
+
+.card-footer, .followers-today, .title {
+    font-size: 14px;
+}

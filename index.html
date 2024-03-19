@@ -6,82 +6,76 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Social Media Dashboard</title>
+
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/card.css">
+  
+
 </head>
 <body>
 
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
-
   
+  <div>
+    <div class="topbar">
+      <div class="header-wrapper">
+        <h1>Social Media Dashboard</h1>
+        <p>Total Followers: 23,004</p>
+      </div>
+      <div class="dark-mode-button-wrapper">
+        <p>Dark Mode</p>
+        <div>button here</div>
+      </div>
+    </div>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+    <div id="top-card-container">
+      <!-- Cards will be dynamically inserted here -->
+    </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+    <template id="top-card-template">
+        <div class="card top-card">
+          <div class="card-header">
+            <img class="card-icon" alt="">
+            <p class="username"></p>
+          </div>
+          <div class="card-main">
+            <h1 class="followers"></h1>
+            <p class="followers-text">FOLLOWERS</p>
+            <p class="followers-today"></p>
+          </div>
+          <div class="card-footer">
+            <p class="followers-change"></p>
+          </div>
+        </div>
+    </template>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+    <div class="bottom-header">
+      <h2>Overview - Today</h2>
+    </div>
+
+    <div id="bottom-card-container">
+      <!-- Cards will be dynamically inserted here -->
+    </div>
+
+    <template id="bottom-card-template">
+      <div class="card bottom-card">
+        <div class="card-header">
+          <p class="title"></p>
+          <img class="card-icon" alt="">
+        </div>
+        <div class="card-footer">
+          <h1 class="number"></h1>
+          <p class="number-today"></p>
+        </div>
+      </div>
+    </template>
 
 
 
-  Overview - Today
+    <script type="module" src="main.js"></script>
 
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
 </html>

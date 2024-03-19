@@ -1,0 +1,31 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(230, 17%, 14%);
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+    padding: 0;
+}
+
+.topbar { 
+    width: 100%;
+    background-color: hsl(232, 19%, 15%);
+}
+
+.light-theme {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(230, 17%, 14%);
+}
+
+.dark-theme {
+    background-color: hsl(230, 17%, 14%);
+    color: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 1440px) {
+
+}
+
+@media (max-width: 375px) {
+
+}
+
