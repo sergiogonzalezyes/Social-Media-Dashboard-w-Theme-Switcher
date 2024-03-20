@@ -11,11 +11,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('bottom-card-container');
-    BottomCardData.forEach(cardInfo => {
+    // foreach loop to create bottom card for every 4 elements then creates a new row
+    let row = document.createElement('div');
+    row.classList.add('cardRow');
+    container.appendChild(row);
+    BottomCardData.forEach((cardInfo, index) => {
+        if (index % 4 === 0) {
+            row = document.createElement('div');
+            row.classList.add('row');
+            container.appendChild(row);
+        }
         const cardElement = createBottomCard(cardInfo);
-        container.appendChild(cardElement);
+        row.appendChild(cardElement);
     });
 });
-
-
 

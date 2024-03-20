@@ -1,8 +1,8 @@
 const TopCardData = [
-    { username: '@nathanf', followers: '1987', today: '12', icon: 'images/icon-facebook.svg', name: 'facebook' },
-    { username: '@nathanf', followers: '1044', today: '99', icon: 'images/icon-twitter.svg', name: 'twitter' },
-    { username: '@realnathanf', followers: '11k', today: '1099', icon: 'images/icon-instagram.svg', name: 'instagram' },
-    { username: 'Nathan F.', followers: '8239', today: '144', icon: 'images/icon-youtube.svg', name: 'youtube' }
+    { username: '@nathanf', follower_type: 'FOLLOWERS', followers: '1987', today: '12', icon: 'images/icon-facebook.svg', name: 'facebook' },
+    { username: '@nathanf', follower_type: 'FOLLOWERS', followers: '1044', today: '99', icon: 'images/icon-twitter.svg', name: 'twitter' },
+    { username: '@realnathanf', follower_type: 'FOLLOWERS', followers: '11k', today: '1099', icon: 'images/icon-instagram.svg', name: 'instagram' },
+    { username: 'Nathan F.', follower_type: 'SUBSCRIBERS', followers: '8239', today: '144', icon: 'images/icon-youtube.svg', name: 'youtube' }
 ];
 
 function createTopCard(cardInfo) {
@@ -10,6 +10,7 @@ function createTopCard(cardInfo) {
     const clone = template.content.cloneNode(true);
 
     clone.querySelector('.username').textContent = cardInfo.username;
+    clone.querySelector('.follower-type').textContent = cardInfo.follower_type;
     clone.querySelector('.followers').textContent = cardInfo.followers;
     clone.querySelector('.followers-today').textContent = cardInfo.today + ' Today';
     

@@ -1,5 +1,18 @@
 .card {
     background-color: hsl(228, 28%, 20%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.top-card {
+    width: 300px;
+    margin: 20px;
+}
+
+/* Styles specifically for bottom cards */
+.bottom-card {
+    width: 300px; /* Takes up 25% of the container width minus the total horizontal padding/margins */
+    margin: 20px; /* Adds margin to the left and right of each card */
 }
 
 .card:hover {
@@ -16,4 +29,41 @@
 
 .card-footer, .followers-today, .title {
     font-size: 14px;
+}
+
+
+@media (min-width: 1440px) {
+    .card {
+        background-color: hsl(228, 28%, 20%);
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .top-card {
+        width: 300px;
+        margin: 20px;
+    }
+
+    .bottom-card {
+        width: 300px;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .card {
+        background-color: hsl(228, 28%, 20%);
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .top-card {
+        width: 300px;
+        margin: 20px;
+    }
+
+    .bottom-card {
+        width: 300px;
+        margin: 0px;
+    }
 }
